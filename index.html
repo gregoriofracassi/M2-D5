@@ -6,14 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Netflix</title>
   </head>
   <body>
+    
+    <nav class="navbar navbar-expand-lg sticky-top pl-3">
+      <a class="navbar-brand" href="#">
+        <img
+          src="assets/netflix_logo.png"
+          width="90"
+          class="img-fluid"
+          alt="Netflix logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recently Added</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My List</a>
+          </li>
+        </ul>
+        <div>
+          <img src="assets/lens.jpg" width="13" alt="lens image" class="mr-2" />
+          <div class="account-dropdown d-inline-block">
+            <span class="text-white">KIDS</span>
+
+            <img
+              src="assets/bell.jpg"
+              width="13"
+              alt="bell image"
+              class="mr-2 ml-2"
+            />
+
+            <img src="assets/kids_icon.png" width="23" alt="icon image" />
+            <span class="nav-icon nav-arrow"
+              ><img src="assets/drop-down.png" width="25" alt=""
+            /></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-marcio">
+      <div class="row">
+            <i class="left-arrow fas fa-less-than"></i>
+            <div class="list">
+            <div class="listitem"><img src="/assets/media/media10.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media12.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media13.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media18.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media1.jpg"></div>
+            <i class="right-arrow fas fa-greater-than"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-marcio">
+      <div class="row">
+            <i class="left-arrow fas fa-less-than"></i>
+            <div class="list">
+            <div class="listitem"><img src="/assets/media/media10.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media12.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media13.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media18.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media1.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media1.jpg"></div>
+            <div class="listitem"><img src="/assets/media/media1.jpg"></div>
+            <i class="right-arrow fas fa-greater-than"></i>
+        </div>
+      </div>
+    </div>
 
     <!-- <div class="container trial white-text">
       <div class="row">
@@ -77,10 +174,9 @@
               <li class="underlined cursor-p">Corporate Information</li>
             </ul>
           </div>
-          <div class="row">
+          <div class="col-12 no-pad">
             <div class="cursor-p button-footer my-2">Service Code</div>
           </div>
-          <div class="row small-text">
             <div>
               © 1997-2021 Netflix, Inc. {fh8fof8-rfsioj209-hu54-kp43-4oin43iotn111}
             </div>
